@@ -109,7 +109,7 @@ class _PredictionScreenState extends State<PredictionScreen>
           Text(
             'Running in background thread',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.4),
+              color: Colors.white.withValues(alpha: 0.4),
               fontSize: 12,
             ),
           ),
@@ -209,7 +209,7 @@ class _PredictionScreenState extends State<PredictionScreen>
                       vertical: 6,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
@@ -272,9 +272,9 @@ class _PredictionScreenState extends State<PredictionScreen>
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -303,7 +303,7 @@ class _PredictionScreenState extends State<PredictionScreen>
             percent: result.confidence.clamp(0.0, 1.0),
             lineHeight: 6,
             padding: EdgeInsets.zero,
-            backgroundColor: Colors.white.withOpacity(0.1),
+            backgroundColor: Colors.white.withValues(alpha: 0.1),
             progressColor: const Color(0xFFE94560),
             barRadius: const Radius.circular(3),
           ),
