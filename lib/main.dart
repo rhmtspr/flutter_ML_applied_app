@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'app.dart';
-import 'utils/logger.dart';
+import 'package:flutter_ml_applied_app/app.dart';
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
