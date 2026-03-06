@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_ml_applied_app/models/food_prediction.dart';
 import 'package:flutter_ml_applied_app/services/firebase_model_service.dart';
 import 'package:flutter_ml_applied_app/services/tflite_service.dart';
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 
 enum PredictionState { idle, initializing, predicting, success, error }
 
