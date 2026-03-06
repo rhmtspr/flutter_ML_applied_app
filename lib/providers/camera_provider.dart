@@ -1,6 +1,5 @@
 // lib/providers/camera_provider.dart
 import 'dart:async';
-import 'dart:typed_data';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import '../helpers/permission_helper.dart';
