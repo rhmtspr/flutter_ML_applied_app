@@ -1,10 +1,10 @@
 // lib/providers/meal_provider.dart
 import 'package:flutter/foundation.dart';
-import '../models/meal.dart';
-import '../models/nutrition.dart';
-import '../services/mealdb_service.dart';
-import '../services/gemini_service.dart';
-import '../utils/logger.dart';
+import 'package:flutter_ml_applied_app/models/meal.dart';
+import 'package:flutter_ml_applied_app/models/nutrition.dart';
+import 'package:flutter_ml_applied_app/services/gemini_service.dart';
+import 'package:flutter_ml_applied_app/services/mealdb_service.dart';
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 
 enum MealState { idle, loading, success, error }
 
