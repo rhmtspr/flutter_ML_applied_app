@@ -171,9 +171,11 @@ class _CameraScreenState extends State<CameraScreen>
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
         decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.75),
+          color: Colors.black.withValues(alpha: 0.75),
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: const Color(0xFFE94560).withOpacity(0.5)),
+          border: Border.all(
+            color: const Color(0xFFE94560).withValues(alpha: 0.5),
+          ),
         ),
         child: Row(
           children: [
@@ -194,7 +196,7 @@ class _CameraScreenState extends State<CameraScreen>
                   Text(
                     'Confidence: ${_livePrediction!.confidencePercent}',
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.white.withValues(alpha: 0.7),
                       fontSize: 12,
                     ),
                   ),
@@ -261,7 +263,7 @@ class _CameraScreenState extends State<CameraScreen>
           gradient: LinearGradient(
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
-            colors: [Colors.black.withOpacity(0.8), Colors.transparent],
+            colors: [Colors.black.withValues(alpha: 0.8), Colors.transparent],
           ),
         ),
         child: Row(
@@ -282,7 +284,7 @@ class _CameraScreenState extends State<CameraScreen>
                       shape: BoxShape.circle,
                       color: _isLiveDetecting
                           ? const Color(0xFFE94560)
-                          : Colors.white.withOpacity(0.2),
+                          : Colors.white.withValues(alpha: 0.2),
                       border: Border.all(color: Colors.white54, width: 2),
                     ),
                     child: Icon(
@@ -313,7 +315,7 @@ class _CameraScreenState extends State<CameraScreen>
                       color: Colors.white,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.white.withOpacity(0.3),
+                          color: Colors.white.withValues(alpha: 0.3),
                           blurRadius: 10,
                           spreadRadius: 2,
                         ),
@@ -357,7 +359,7 @@ class _CircleButton extends StatelessWidget {
         height: 40,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Colors.black.withOpacity(0.5),
+          color: Colors.black.withValues(alpha: 0.5),
         ),
         child: Icon(icon, color: Colors.white, size: 20),
       ),
@@ -369,7 +371,7 @@ class _CameraOverlayPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.6)
+      ..color = Colors.white.withValues(alpha: 0.6)
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
 
