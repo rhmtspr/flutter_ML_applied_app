@@ -1,5 +1,6 @@
 // lib/services/firebase_model_service.dart
 import 'package:firebase_ml_model_downloader/firebase_ml_model_downloader.dart';
+import 'package:flutter_ml_applied_app/config/app_constants.dart';
 import '../utils/logger.dart';
 
 class FirebaseModelService {
