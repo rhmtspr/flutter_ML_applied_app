@@ -1,5 +1,11 @@
 // lib/config/routes.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_ml_applied_app/models/food_prediction.dart';
+import 'package:flutter_ml_applied_app/screens/camera/camera_screen.dart';
+import 'package:flutter_ml_applied_app/screens/crop/crop_screen.dart';
+import 'package:flutter_ml_applied_app/screens/home/home_screen.dart';
+import 'package:flutter_ml_applied_app/screens/prediction/prediction_screen.dart';
+import 'package:flutter_ml_applied_app/screens/result/result_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRoutes {
