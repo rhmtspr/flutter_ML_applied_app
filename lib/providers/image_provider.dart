@@ -1,6 +1,5 @@
 // lib/providers/image_provider.dart
 import 'package:flutter/foundation.dart';
-import 'package:flutter_ml_applied_app/helpers/permission_helper.dart';
 import 'package:flutter_ml_applied_app/utils/logger.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -23,20 +22,6 @@ class AppImageProvider extends ChangeNotifier {
     _error = null;
 
     try {
-      // Request permissions
-      bool hasPermission = false;
-      if (sourceType == ImageSourceType.camera) {
-        hasPermission = await PermissionHelper.requestCameraPermission();
-      } else {
-        hasPermission = await PermissionHelper.requestStoragePermission();
-      }
-
-      if (!hasPermission) {
-        _error = 'Permission denied. Please enable in settings.';
-        notifyListeners();
-        return null;
-      }
-
       final source = sourceType == ImageSourceType.camera
           ? ImageSource.camera
           : ImageSource.gallery;
