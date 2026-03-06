@@ -1,6 +1,7 @@
 // lib/providers/prediction_provider.dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter_ml_applied_app/models/food_prediction.dart';
+import 'package:flutter_ml_applied_app/services/tflite_service.dart';
 
 enum PredictionState { idle, initializing, predicting, success, error }
 
