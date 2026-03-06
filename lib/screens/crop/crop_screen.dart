@@ -120,7 +120,7 @@ class _CropScreenState extends State<CropScreen> {
                 Text(
                   'Crop the image to focus on the food',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha: 0.7),
                     fontSize: 14,
                   ),
                   textAlign: TextAlign.center,
