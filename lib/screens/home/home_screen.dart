@@ -21,18 +21,20 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              children: [
-                const SizedBox(height: 40),
-                _buildHeader(),
-                const Spacer(),
-                _buildActionButtons(context),
-                const SizedBox(height: 24),
-                _buildModelStatus(context),
-                const SizedBox(height: 40),
-              ],
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Column(
+                children: [
+                  const SizedBox(height: 40),
+                  _buildHeader(),
+                  const SizedBox(height: 40),
+                  _buildActionButtons(context),
+                  const SizedBox(height: 24),
+                  _buildModelStatus(context),
+                  const SizedBox(height: 40),
+                ],
+              ),
             ),
           ),
         ),
