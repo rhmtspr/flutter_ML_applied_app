@@ -1,4 +1,5 @@
 // lib/helpers/permission_helper.dart
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class PermissionHelper {
