@@ -2,7 +2,6 @@
 import 'dart:async';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
-import '../helpers/permission_helper.dart';
 import '../utils/logger.dart';
 
 enum CameraState { uninitialized, ready, streaming, error, disposed }
@@ -26,12 +25,6 @@ class CameraProvider extends ChangeNotifier {
 
   Future<void> initialize() async {
     try {
-      final hasPermission = await PermissionHelper.requestCameraPermission();
-      if (!hasPermission) {
-        _setError('Camera permission denied');
-        return;
-      }
-
       _cameras = await availableCameras();
       if (_cameras.isEmpty) {
         _setError('No cameras available');
