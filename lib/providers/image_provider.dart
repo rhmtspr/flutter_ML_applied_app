@@ -2,6 +2,7 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_ml_applied_app/helpers/permission_helper.dart';
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 import 'package:image_picker/image_picker.dart';
 
 enum ImageSourceType { camera, gallery }
