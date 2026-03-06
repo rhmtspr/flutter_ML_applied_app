@@ -4,6 +4,7 @@ import 'dart:isolate';
 import 'dart:typed_data';
 import 'package:flutter/services.dart';
 import 'package:flutter_ml_applied_app/config/app_constants.dart';
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 
