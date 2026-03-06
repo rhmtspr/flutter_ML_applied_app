@@ -1,9 +1,9 @@
 // lib/services/mealdb_service.dart
 import 'dart:convert';
+import 'package:flutter_ml_applied_app/config/app_constants.dart';
+import 'package:flutter_ml_applied_app/models/meal.dart';
+import 'package:flutter_ml_applied_app/utils/logger.dart';
 import 'package:http/http.dart' as http;
-import '../config/app_constants.dart';
-import '../models/meal.dart';
-import '../utils/logger.dart';
 
 class MealDbService {
   final http.Client _client;
